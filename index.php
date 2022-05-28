@@ -19,7 +19,7 @@
 
 
       <!-- <form action="card.php" method="post"> -->
-      <form action="" method="post">
+      <form action="" method="post" class="relative top-10 block w-56 my-0 mx-auto text-center">
         <input list="characters" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Character" required>
           <datalist id="characters" required>
           <!-- <option disabled selected value style="display:none"> -->
@@ -103,10 +103,10 @@
 
     <?php if (!empty($_POST)) { ?>
 
-      <div class="card">
+      <div id="card" class="relative w-[340px] h-[560px] top-14 my-20 mx-auto bg-no-repeat bg-contain">
        <a href="index.php" class="text-2xl float-right absolute text-black m-2 right-2"><i class='bx bx-x-circle'></i></a>
         <div class="image">
-          <img src="vault/<?=$Fl_name . $Image_format ?>" class="h-full">
+          <img src="vault/<?=$Fl_name . $Image_format ?>"  class="h-full w-full rounded-xl">
         </div>
         <div class="name">
               <p><?=$Fl_name?></p>
