@@ -40,7 +40,7 @@
      
     <?php
           if (isset($_POST["submit"])) {
-            $caracter_name = $_POST["name"];
+            $caracter_name = ucwords($_POST["name"]);
             $conn = mysqli_connect("localhost", "root", "", "junior");
             $sql = "SELECT * FROM marvel WHERE name='$caracter_name'";
             $result = mysqli_query($conn, $sql);
