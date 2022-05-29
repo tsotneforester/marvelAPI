@@ -48,25 +48,25 @@ body {
   /* border-radius: 12px; */
 }
 
-.name {
-  position: absolute;
+#name {
+  /* position: absolute;
   top: 129px;
   left: 169px;
   width: 141px;
-  height: 26px;
-  border-radius: 12px;
-  font-size: 2em;
-  font-weight: bold;
+  height: 26px; */
+  /* border-radius: 12px; */
+  /* font-size: 2em;
+  font-weight: bold; */
 }
 
-.info {
-  position: absolute;
+#info {
+  /* position: absolute;
   top: 229px;
   left: 62px;
   width: 258px;
   height: 252px;
-  border-radius: 12px;
+
   font-weight: bold;
   font-style: italic;
-  overflow: auto;
+  overflow: auto; */
 }
