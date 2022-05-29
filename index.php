@@ -122,7 +122,7 @@
       <div id="flexbox" class="flex shrink-0 flex-wrap">
     <?php  
       $conn = mysqli_connect("localhost", "root", "", "junior");
-      $sql = "SELECT * FROM marvel";
+      $sql = "SELECT * FROM marvel ORDER BY id DESC";
       $result = mysqli_query($conn, $sql);
 
       while ($DataRows = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -134,16 +134,16 @@
       
       
 
-    <div class="card">
-      <div class="image">
-        <img src="vault/<?=$Fl_name . $Image_format ?>" class="h-full">
-      </div>
-      <div class="name">
-            <p><?=$Fl_name?></p>
-      </div>
-      <div class="info">
-            <p><?=$Comment?></p>
-      </div>
+      <div id="card" class="relative w-[340px] h-[560px] top-14 my-20 mx-auto bg-no-repeat bg-contain">
+    <div id="image" class="absolute top-2 left-[-20px] w-[156px] h-[156px] -rotate-[30deg] rounded-[12px] border-white border-4 ">
+          <img src="vault/<?=$Fl_name . $Image_format ?>"  class="h-full w-full rounded-xl">
+        </div>
+      <div id="name" class="absolute top-[129px] left-[169px] w-[141px] h-[26px] text-2xl font-bold ">
+              <p><?=$Fl_name?></p>
+        </div>
+      <div id="info" class="absolute top-[229px] left-[62px] w-[258px] h-[252px] text-lg font-bold italic overflow-auto">
+              <p><?=$Comment?></p>
+        </div>
     </div>
   <?php }?>
  </div>
