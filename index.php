@@ -105,7 +105,7 @@
 
       <div id="card" class="relative w-[340px] h-[560px] top-14 my-20 mx-auto bg-no-repeat bg-contain">
        <a href="index.php" class="text-2xl float-right absolute text-black m-2 right-2"><i class='bx bx-x-circle'></i></a>
-        <div class="image">
+        <div id="image" class="absolute top-2 left-[-20px] w-[156px] h-[156px] -rotate-[30deg] rounded-[12px] border-white border-4 ">
           <img src="vault/<?=$Fl_name . $Image_format ?>"  class="h-full w-full rounded-xl">
         </div>
         <div class="name">
